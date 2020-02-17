@@ -5,7 +5,7 @@ import Grid from '@material-ui/core/Grid';
 import Container from '@material-ui/core/Container';
 import GitHubIcon from '@material-ui/icons/GitHub';
 import FacebookIcon from '@material-ui/icons/Facebook';
-import TwitterIcon from '@material-ui/icons/Twitter';
+import InstagramIcon from '@material-ui/icons/Instagram';
 import Header from './layout/Header';
 import MainFeaturedPost from './MainFeaturedPost';
 import FeaturedPost from './FeaturedPost';
@@ -34,7 +34,7 @@ const sections = [
 ];
 
 const mainFeaturedPost = {
-    title: 'Developer 김두완의 포트폴리오입니다',
+    title: '김두완의 포트폴리오',
     description:
         "Multiple lines of text that form the lede, informing new readers quickly and efficiently about what's most interesting in this post's contents.",
     image: 'https://source.unsplash.com/random',
@@ -67,7 +67,7 @@ const featuredPosts = [
         title: 'Shopping_mall Project',
         date: 'Aug 2019 ~ Sep 2019',
         description:
-            'MogoDB + Express.js + Node.js를 이용하여 회원가입, 로그인, 상품 등록/제거, 게시판 글 추가, 좋아요/싫어요 기능을 추가한 프로젝트',
+            'MongoDB + Express.js + Node.js를 이용하여 회원가입, 로그인, 상품 등록/제거, 게시판 글 추가, 좋아요/싫어요 기능을 추가한 프로젝트',
         image: 'https://source.unsplash.com/random',
         imageText: 'Image Text',
     },
@@ -76,12 +76,9 @@ const featuredPosts = [
 const posts = [post1, post2, post3];
 
 const sidebar = {
-    title: 'About',
-    description:
-        'Etiam porta sem malesuada magna mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.',
     social: [
         { name: 'GitHub', icon: GitHubIcon },
-        { name: 'Twitter', icon: TwitterIcon },
+        { name: 'Instagram', icon: InstagramIcon },
         { name: 'Facebook', icon: FacebookIcon },
     ],
 };
@@ -102,10 +99,7 @@ export default function Blog() {
                         ))}
                     </Grid>
                     <Grid container spacing={5} className={classes.mainGrid}>
-                        <Main title="From the firehose" posts={posts} />
                         <Sidebar
-                            title={sidebar.title}
-                            description={sidebar.description}
                             social={sidebar.social}
                         />
                     </Grid>
