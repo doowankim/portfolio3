@@ -27,7 +27,7 @@ export default function FeaturedPost(props) {
 
     return (
         <Grid item xs={12} md={6}>
-            <CardActionArea component="a" href="#">
+            <CardActionArea component="a" href="https://github.com/doowankim">
                 <Card className={classes.card}>
                     <div className={classes.cardDetails}>
                         <CardContent>
@@ -40,14 +40,14 @@ export default function FeaturedPost(props) {
                             <Typography variant="subtitle1" paragraph>
                                 {post.description}
                             </Typography>
-                            <Typography variant="subtitle1" color="primary">
-                                Continue reading...
+                            <Typography className={classes.pos} color="textSecondary">
+                                {post.extra}
                             </Typography>
                         </CardContent>
                     </div>
-                    <Hidden xsDown>
-                        <CardMedia className={classes.cardMedia} image={post.image} title={post.imageTitle} />
-                    </Hidden>
+                    {/*<Hidden xsDown>*/}
+                    {/*    <CardMedia className={classes.cardMedia} image src={post.image} title={post.imageTitle} />*/}
+                    {/*</Hidden>*/}
                 </Card>
             </CardActionArea>
         </Grid>

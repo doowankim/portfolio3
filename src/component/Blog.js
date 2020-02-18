@@ -4,21 +4,16 @@ import CssBaseline from '@material-ui/core/CssBaseline';
 import Grid from '@material-ui/core/Grid';
 import Container from '@material-ui/core/Container';
 import GitHubIcon from '@material-ui/icons/GitHub';
-import FacebookIcon from '@material-ui/icons/Facebook';
-import InstagramIcon from '@material-ui/icons/Instagram';
 import Header from './layout/Header';
 import MainFeaturedPost from './MainFeaturedPost';
 import FeaturedPost from './FeaturedPost';
 import Main from './Main';
 import Sidebar from './layout/Sidebar';
 import Footer from './layout/Footer';
-import post1 from './scripts/blog-post.1.md';
-import post2 from './scripts/blog-post.2.md';
-import post3 from './scripts/blog-post.3.md';
-import JobWanted from '../img/jobwanted.jpeg';
-import Netflix from '../img/netflix.jpg';
-import SocialLogin from '../img/socialLogin.jpeg';
-import ShoppingMall from '../img/shopping mall.jpg';
+import post1 from './blog-post.1.md';
+import post2 from './blog-post.2.md';
+import post3 from './blog-post.3.md';
+import Skills from "./Skills";
 
 const useStyles = makeStyles(theme => ({
     mainGrid: {
@@ -27,16 +22,22 @@ const useStyles = makeStyles(theme => ({
 }));
 
 const sections = [
-    { title: 'About Me', url: '#' },
-    { title: 'Skills', url: '#' },
-    { title: 'Project', url: '#' },
-    { title: 'Contact', url: '#' },
+    { title: 'About Me', url: 'AboutMe' },
+    { title: 'Skills', url: 'Skills' },
+    { title: 'Project', url: 'Project' },
+    { title: 'Contact', url: 'Contact' },
 ];
 
 const mainFeaturedPost = {
     title: '김두완의 포트폴리오',
     description:
-        "Multiple lines of text that form the lede, informing new readers quickly and efficiently about what's most interesting in this post's contents.",
+        "대학시절 때부터 호기심이 많은 성격에 만들어보았던 간단한 계산기 프로그램으로 무언가를 만드는 것에 흥미를 느끼게 되었고 " +
+        "그 때부터 개발자를 꿈꾸게 되었습니다." +
+        "그 중 JavaScript가 가지고 있는 가능성과 다양성에 매료되어 웹 어플리케이션 개발자가 되기위해 많은 노력을 하고 있습니다." +
+        "저는 제 목표를 늘 성장하는 개발자로 삼아서 공부하고 있습니다. " +
+        "경력을 쌓다가도 자기 실력에 만족하거나 남들이 인정해주는 것을 받아들이면 정체되기 때문에, " +
+        "매 번 성장하려면 항상 겸손한 자세와 만족하지 않아야 한다고 생각합니다." +
+        "그렇기 때문에 저는 꾸준히 공부하여 항상 성장하는 개발자로 남고 싶습니다.",
     image: 'https://source.unsplash.com/random',
     imgText: 'main image description',
 };
@@ -47,39 +48,36 @@ const featuredPosts = [
         date: 'Dec 2019 ~ ',
         description:
             'React + Redux + Node.js + Express.js + MongoDB를 이용하여 로그인 및 게시판 기능 등이 구현된 간단한 구직 사이트',
-        imageText: 'Image Text',
+        extra: '#React #Redux #Node.js #Express.js #MongoDB',
     },
     {
         title: 'Netflix Project',
         date: 'Nov 2019',
         description:
-            'React.js + 공유 Api를 이용하여 구현된 간단한 영화 소개 사이트',
-        imageText: 'Image Text',
+            'React.js + The Movie Database API를 이용하여 구현된 다양한 영화, TV 프로그램 소개 및 검색 사이트',
+        extra: '#React.js',
     },
     {
         title: 'Social_login Project',
         date: 'Oct 2019',
         description:
             'MongoDB + Express.js + Node.js를 이용하여 facebook, google 로그인 기능이 추가된 프로젝트',
-        imageText: 'Image Text',
+        extra: '#Node.js #Express.js #MongoDB',
     },
     {
         title: 'Shopping_mall Project',
         date: 'Aug 2019 ~ Sep 2019',
         description:
-            'MongoDB + Express.js + Node.js를 이용하여 회원가입, 로그인, 상품 등록/제거, 게시판 글 추가, 좋아요/싫어요 기능을 추가한 프로젝트',
-        image: 'https://source.unsplash.com/random',
-        imageText: 'Image Text',
+            'MongoDB + Express.js + Node.js를 이용하여 회원가입, 로그인, 상품 등록/제거, 게시판 글 작성/삭제, 좋아요/싫어요 기능을 추가한 프로젝트',
+        extra: '#Node.js #Express.js #MongoDB',
     },
 ];
 
 const posts = [post1, post2, post3];
 
 const sidebar = {
-    social: [
+    contact: [
         { name: 'GitHub', icon: GitHubIcon },
-        { name: 'Instagram', icon: InstagramIcon },
-        { name: 'Facebook', icon: FacebookIcon },
     ],
 };
 
@@ -99,8 +97,10 @@ export default function Blog() {
                         ))}
                     </Grid>
                     <Grid container spacing={5} className={classes.mainGrid}>
+                        <Main title="Skills" posts={posts} />
+                        <Skills />
                         <Sidebar
-                            social={sidebar.social}
+                            contact={sidebar.contact}
                         />
                     </Grid>
                 </main>

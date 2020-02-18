@@ -4,6 +4,7 @@ import { makeStyles } from '@material-ui/core/styles';
 import Grid from '@material-ui/core/Grid';
 import Typography from '@material-ui/core/Typography';
 import Link from '@material-ui/core/Link';
+import EmailIcon from '@material-ui/icons/Email';
 
 const useStyles = makeStyles(theme => ({
     sidebarAboutBox: {
@@ -17,15 +18,19 @@ const useStyles = makeStyles(theme => ({
 
 export default function Sidebar(props) {
     const classes = useStyles();
-    const { social } = props;
+    const { contact } = props;
 
     return (
         <Grid item xs={12} md={4}>
             <Typography variant="h6" gutterBottom className={classes.sidebarSection}>
-                Social
+                Contact
             </Typography>
-            {social.map(network => (
-                <Link display="block" variant="body1" href="#" key={network}>
+            <h3>
+                <EmailIcon />
+                rlaendhks11@gmail.com
+            </h3>
+            {contact.map(network => (
+                <Link display="block" variant="body1" href="https://github.com/doowankim" key={network}>
                     <Grid container direction="row" spacing={1} alignItems="center">
                         <Grid item>
                             <network.icon />
