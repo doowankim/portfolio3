@@ -27,10 +27,10 @@ export default function Sidebar(props) {
             </Typography>
             <h3>
                 <EmailIcon />
-                rlaendhks11@gmail.com
+                doowankim11@gmail.com
             </h3>
             {contact.map(network => (
-                <Link display="block" variant="body1" href="https://github.com/doowankim" key={network}>
+                <Link display="block" variant="body1" href="https://github.com/doowankim/portfolio3" key={network}>
                     <Grid container direction="row" spacing={1} alignItems="center">
                         <Grid item>
                             <network.icon />

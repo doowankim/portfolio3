@@ -1,68 +1,110 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+## Portfolio
 
-In the project directory, you can run:
+### `JobWanted Project`
+## Tool
+* Language & Framework : React.js, React-Redux, Node.js, Express.js
+* Web Skills : HTML, CSS
+* Database : MongoDB
 
-### `yarn start`
+## 기획
+### 1.의도
+* Server부터 View까지 직접 제작해 보기 위함
+* React.js를 해봄으로써 나의 스킬을 쌓기 위함
+* React-Redux를 사용해봄으로써 데이터 처리
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
 
-### `yarn test`
+### 2.페이지 구상
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## View
 
-### `yarn build`
+- [x] 회원가입
+- [x] 로그인
+- [x] 프로필 내용 기재 및 수정
+- [x] 경력 및 학력 추가
+- [x] 게시판 추가
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Server Api
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+- [x] 회원가입, 로그인, 사용자정보 수정 및 삭제, google & facebook 로그인 (User) 
+- [x] 프로필 정보(Detail) 등록 및 수정, 검색 기능, 삭제 기능, 경력 및 학력 등록 (Profile)
+- [x] 게시판 글 올리기, 첨부파일(이미지) 추가, 좋아요 & 싫어요 기능, 댓글 기능 (Post)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `yarn eject`
+Open [https://github.com/doowankim/blog_mern](https://github.com/doowankim/blog_mern)
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+### `Netflix_Clone Project`
+## Tool
+* Language & Framework : React.js
+* Web Skills : HTML, CSS
+* Database api : [https://www.themoviedb.org](https://www.themoviedb.org) 
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## 기획
+### 1.의도
+* netflix 같은 영화, TV 프로그램을 공유 DB API를 이용하여 개발해보기 위함
+* react.js를 해봄으로써 나의 스킬을 쌓기 위함
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+### 2.페이지 구상
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+#### View
 
-## Learn More
+- [x] Home
+- [x] TV Show
+- [x] Search
+- [x] Detail
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+#### API Verbs
+- [x] Now playing (Movie)
+- [x] Upcoming (Movie)
+- [x] Top Rated (TV)
+- [x] Popular (TV, Movie)
+- [x] Airing Today (TV)
+- [x] TV Show Detail
+- [x] Movie Detail
+- [x] Search (Movie, TV)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
+Open [https://github.com/doowankim/netflix_clone](https://github.com/doowankim/netflix_clone)
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+### `Social_Login Project`
+## Tool
+* Language & Framework : Node.js, Express.js
+* Database : MongoDB
 
-### Analyzing the Bundle Size
+## 의도
+* 쇼핑몰 제작의 로그인 기능을 바탕으로 대중적인 facebook, google 로그인을 제작해보기 위함
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
+## 기획
 
-### Making a Progressive Web App
+### 1. 서버 구상
+* google과 facebook의 Client ID, ClientSecret을 .env로 저장한 후, google의 accessToken, facebook의 accessToken을 각각 받아와서
+REST api 테스트
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
+#### API Verb
+- [x] 회원가입
+- [x] 소셜로그인
 
-### Advanced Configuration
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
+Open [https://github.com/doowankim/social_login](https://github.com/doowankim/social_login)
 
-### Deployment
+### `Shopping_Mall Project`
+## Tool
+* Language & Framework : Node.js, Express.js
+* Database : MongoDB
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
+## 기획
 
-### `yarn build` fails to minify
+### 1. 서버 구상
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+#### API Verb
+- [x] 상품 등록 및 장바구니 추가 기능
+- [x] 등록상품 목록 삭제 기능
+- [x] 등록상품 내용 수정 기능
+- [x] 상품 전체 목록 가져오기 기능
+
+- [x] 회원가입
+- [x] 로그인
+
+
+Open [https://github.com/doowankim/nodeshop](https://github.com/doowankim/nodeshop)

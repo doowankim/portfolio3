@@ -13,7 +13,6 @@ import Footer from './layout/Footer';
 import post1 from './blog-post.1.md';
 import post2 from './blog-post.2.md';
 import post3 from './blog-post.3.md';
-import Skills from "./Skills";
 
 const useStyles = makeStyles(theme => ({
     mainGrid: {
@@ -23,8 +22,8 @@ const useStyles = makeStyles(theme => ({
 
 const sections = [
     { title: 'About Me', url: 'AboutMe' },
-    { title: 'Skills', url: 'Skills' },
     { title: 'Project', url: 'Project' },
+    { title: 'Skills', url: 'Skills' },
     { title: 'Contact', url: 'Contact' },
 ];
 
@@ -98,7 +97,6 @@ export default function Blog() {
                     </Grid>
                     <Grid container spacing={5} className={classes.mainGrid}>
                         <Main title="Skills" posts={posts} />
-                        <Skills />
                         <Sidebar
                             contact={sidebar.contact}
                         />
