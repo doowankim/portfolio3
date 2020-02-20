@@ -85,7 +85,7 @@
 | ------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------- | ----------- |
 | [nodemon](https://github.com/remy/nodemon)                                                                                | node.js 응용 프로그램의 변경 사항을 모니터링하고 서버를 자동으로 다시 시작   | -           |
 
-###### Open Detail [https://github.com/doowankim/blog_mern](https://github.com/doowankim/blog_mern)
+###### ⭐️Open Detail [https://github.com/doowankim/blog_mern](https://github.com/doowankim/blog_mern)
 
 
 
@@ -111,7 +111,7 @@
 - [x] Search
 - [x] Detail
 
-#### API Verbs
+#### 주요 기능
 - [x] Now playing (Movie)
 - [x] Upcoming (Movie)
 - [x] Top Rated (TV)
@@ -122,7 +122,7 @@
 - [x] Search (Movie, TV)
 
 
-Open Detail [https://github.com/doowankim/netflix_clone](https://github.com/doowankim/netflix_clone)
+###### ⭐️Open Detail [https://github.com/doowankim/netflix_clone](https://github.com/doowankim/netflix_clone)
 
 ### `Social_Login Project`
 ## Tool
@@ -138,12 +138,12 @@ Open Detail [https://github.com/doowankim/netflix_clone](https://github.com/doow
 * google과 facebook의 Client ID, ClientSecret을 .env로 저장한 후, google의 accessToken, facebook의 accessToken을 각각 받아와서
 REST api 테스트
 
-#### API Verb
+#### 주요 기능
 - [x] 회원가입
 - [x] 소셜로그인
 
 
-Open Detail [https://github.com/doowankim/social_login](https://github.com/doowankim/social_login)
+###### ⭐️Open Detail [https://github.com/doowankim/social_login](https://github.com/doowankim/social_login)
 
 ### `Shopping_Mall Project`
 ## Tool
@@ -154,14 +154,14 @@ Open Detail [https://github.com/doowankim/social_login](https://github.com/doowa
 
 ### 1. 서버 구상
 
-#### API Verb
-- [x] 상품 등록 및 장바구니 추가 기능
-- [x] 등록상품 목록 삭제 기능
-- [x] 등록상품 내용 수정 기능
-- [x] 상품 전체 목록 가져오기 기능
+#### 주요 기능
+- [x] 상품 등록 및 장바구니 추가
+- [x] 등록상품 목록 삭제 
+- [x] 등록상품 내용 수정
+- [x] 상품 전체 목록 가져오기
 
 - [x] 회원가입
 - [x] 로그인
 
 
-Open Detail [https://github.com/doowankim/nodeshop](https://github.com/doowankim/nodeshop)
+###### ⭐️Open Detail [https://github.com/doowankim/nodeshop](https://github.com/doowankim/nodeshop)
