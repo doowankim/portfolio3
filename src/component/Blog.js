@@ -11,6 +11,7 @@ import Main from './Main';
 import Sidebar from './layout/Sidebar';
 import Footer from './layout/Footer';
 import Typography from '@material-ui/core/Typography';
+import Helmet from 'react-helmet';
 
 const useStyles = makeStyles(theme => ({
     mainGrid: {
@@ -81,6 +82,9 @@ export default function Blog() {
 
     return (
         <React.Fragment>
+            <Helmet>
+                <title>Doowan's Portfolio</title>
+            </Helmet>
             <CssBaseline />
             <Container maxWidth="lg">
                 <Header title="Portfolio" sections={sections} />
