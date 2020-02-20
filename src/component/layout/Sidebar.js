@@ -25,10 +25,10 @@ export default function Sidebar(props) {
             <Typography variant="h6" gutterBottom className={classes.sidebarSection}>
                 Contact
             </Typography>
-            <h3>
+            <h6>
                 <EmailIcon />
                 doowankim11@gmail.com
-            </h3>
+            </h6>
             {contact.map(network => (
                 <Link display="block" variant="body1" href="https://github.com/doowankim/portfolio3" key={network}>
                     <Grid container direction="row" spacing={1} alignItems="center">

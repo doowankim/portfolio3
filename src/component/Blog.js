@@ -10,6 +10,7 @@ import FeaturedPost from './FeaturedPost';
 import Main from './Main';
 import Sidebar from './layout/Sidebar';
 import Footer from './layout/Footer';
+import Typography from '@material-ui/core/Typography';
 import post1 from './blog-post.1.md';
 import post2 from './blog-post.2.md';
 import post3 from './blog-post.3.md';
@@ -96,7 +97,15 @@ export default function Blog() {
                         ))}
                     </Grid>
                     <Grid container spacing={5} className={classes.mainGrid}>
-                        <Main title="Skills" posts={posts} />
+                        <Main title="Skills" />
+                    </Grid>
+                    <Typography variant="subtitle1" paragraph>
+                        <div>Language: JavaScript(Intermediate), C(Intermediate), Java(Basic), Python(Basic)</div>
+                        <div>Web Skills: HTML(Intermediate), CSS(Intermediate), JavaScript(Intermediate)</div>
+                        <div>FrameWork: React.js(Intermediate), Node.js(Intermediate)</div>
+                        <div>DataBase: MongoDB(Basic)</div>
+                    </Typography>
+                    <Grid container spacing={5} gutterBottom className={classes.sidebarSection}>
                         <Sidebar
                             contact={sidebar.contact}
                         />

@@ -22,12 +22,12 @@ export default function Main(props) {
             <Typography variant="h6" gutterBottom>
                 {title}
             </Typography>
-            <Divider />
-            {posts.map(post => (
-                <Markdown className={classes.markdown} key={post.substring(0, 40)}>
-                    {post}
-                </Markdown>
-            ))}
+            {/*<Divider />*/}
+            {/*{posts.map(post => (*/}
+            {/*    <Markdown className={classes.markdown} key={post.substring(0, 40)}>*/}
+            {/*        {post}*/}
+            {/*    </Markdown>*/}
+            {/*))}*/}
         </Grid>
     );
 }
