@@ -85,7 +85,11 @@
 | ------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------- | ----------- |
 | [nodemon](https://github.com/remy/nodemon)                                                                                | node.js 응용 프로그램의 변경 사항을 모니터링하고 서버를 자동으로 다시 시작   | -           |
 
-Open Detail [https://github.com/doowankim/blog_mern](https://github.com/doowankim/blog_mern)
+###### Open Detail [https://github.com/doowankim/blog_mern](https://github.com/doowankim/blog_mern)
+
+
+
+
 
 ### `Netflix_Clone Project`
 ## Tool
